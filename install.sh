@@ -1,7 +1,7 @@
 #!/bin/sh
 apt update
 apt install unrar -y
-wget https://www.dropbox.com/scl/fi/rd749ndevev3tiop4o2lx/ffmpeg.rar?rlkey=w2vb7pfp34xgizq0d22aqngyd&st=clf4ll7i&dl=0
+wget -O ffmpeg.rar "https://www.dropbox.com/scl/fi/rd749ndevev3tiop4o2lx/ffmpeg.rar?rlkey=w2vb7pfp34xgizq0d22aqngyd&dl=1"
 unrar x ffmppeg.rar
 cd ffmpeg/
 mv ffmpeg /usr/local/bin/
