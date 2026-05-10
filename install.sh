@@ -5,7 +5,6 @@ wget -O ffmpeg.rar "https://www.dropbox.com/scl/fi/rd749ndevev3tiop4o2lx/ffmpeg.
 unrar x ffmpeg.rar
 cd ffmpeg/
 mv ffmpeg /usr/local/bin/
-mv ffprobe /usr/local/bin/
 chmod -R +x /usr/local/bin/
 cd /root
 wget https://github.com/sibuk76/o11Pro/raw/main/o11Pro.rar
