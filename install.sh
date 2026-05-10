@@ -21,7 +21,7 @@ systemctl enable o11Pro.service
 systemctl start o11Pro.service
 wget https://raw.githubusercontent.com/sibuk76/o11Pro/refs/heads/main/cleanup.py
 mv cleanup.py /home/o11Pro/scripts/
-(crontab -l 2>/dev/null; echo "* * * * * /usr/bin/python3 /home/o11Pro/scripts/cleanup.py > /dev/null 2>&1 >> /var/log/yourcron.log 2>&1") | crontab -
+(crontab -l 2>/dev/null; echo "* * * * * /usr/bin/python3 /home/o11Pro/scripts/cleanup.py > /dev/null 2>&1") | crontab -
 
 echo "Installation Complete"
 echo "Please login http://YOURIP:6060"
