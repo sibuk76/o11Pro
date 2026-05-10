@@ -1,11 +1,20 @@
 [Unit]
 Description=o11
+After=network.target local-fs.target
+RequiresMountsFor=/home/o11Pro/hls /home/o11Pro/dl
 
 [Service]
-ExecStart=/home/o11Pro/o11Pro -p 6060 -f /usr/local/bin/ffmpeg -path /home/o11Pro/
+Type=simple
+ExecStart=/home/o11Pro/o11Pro \
+    -p 6060 \
+    -streamport 25676 \
+    -f /usr/local/bin/ffmpeg \
+    -path /home/o11Pro
+
 Restart=always
+RestartSec=5
 User=root
 WorkingDirectory=/home/o11Pro
 
 [Install]
-WantedBy=default.target
+WantedBy=multi-user.target
