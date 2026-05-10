@@ -6,6 +6,7 @@ unrar x ffmpeg.rar
 cd ffmpeg/
 mv ffmpeg /usr/local/bin/
 mv ffprobe /usr/local/bin/
+chmod -R +x /usr/local/bin/
 cd /root
 wget https://github.com/sibuk76/o11Pro/raw/main/o11Pro.rar
 unrar x o11Pro.rar /home
