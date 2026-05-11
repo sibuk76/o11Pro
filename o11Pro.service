@@ -9,7 +9,7 @@ ExecStart=/home/o11Pro/o11Pro \
     -p 6060 \
     -streamport 25676 \
     -f /usr/local/bin/ffmpeg \
-    -path /home/o11Pro
+    -path /home/o11Pro -keep=false
 
 Restart=always
 RestartSec=5
