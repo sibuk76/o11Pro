@@ -11,7 +11,6 @@ ExecStart=/home/o11Pro/o11Pro \
     -f /usr/local/bin/ffmpeg \
     -keep=false\
     -path /home/o11Pro
- -keep=false
 
 Restart=always
 RestartSec=5
